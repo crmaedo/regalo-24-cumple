@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>TEST SUPERPOP 24 AÑOS 💖</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Fredoka & Outfit (Estética Y2K / Revista Pop) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Canvas Confetti CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        pop: ['Fredoka', 'sans-serif'],
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        bravopink: '#FF4E8E',
+                        bravopurple: '#8A2BE2',
+                        bravoyellow: '#FFD700',
+                        bravocyan: '#00F5D4',
+                        bravomint: '#70E000',
+                        dramared: '#FF003C',
+                    },
+                    boxShadow: {
+                        'y2k': '4px 4px 0px 0px #000000',
+                        'y2k-lg': '6px 6px 0px 0px #000000',
+                        'y2k-sm': '2px 2px 0px 0px #000000',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: linear-gradient(135deg, #FF9a9e 0%, #fecfef 50%, #a1c4fd 100%);
+            background-attachment: fixed;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .pattern-bg {
+            background-image: radial-gradient(rgba(255, 78, 142, 0.25) 2px, transparent 2px), radial-gradient(rgba(138, 43, 226, 0.25) 2px, transparent 2px);
+            background-size: 24px 24px;
+            background-position: 0 0, 12px 12px;
+        }
+
+        @keyframes stickerPulse {
+            0%, 100% { transform: scale(1) rotate(-3deg); }
+            50% { transform: scale(1.06) rotate(2deg); }
+        }
+        .sticker-anim {
+            animation: stickerPulse 2.5s infinite ease-in-out;
+        }
+
+        @keyframes dramaShake {
+            0%, 100% { transform: rotate(0deg); }
+            20% { transform: rotate(-3deg) scale(1.02); }
+            40% { transform: rotate(3deg) scale(1.02); }
+            60% { transform: rotate(-2deg); }
+            80% { transform: rotate(2deg); }
+        }
+        .drama-anim {
+            animation: dramaShake 1.2s infinite ease-in-out;
+        }
+
+        .fade-in-slide {
+            animation: fadeInSlide 0.4s ease-out forwards;
+        }
+
+        @keyframes fadeInSlide {
+            from {
+                opacity: 0;
+                transform: translateY(15px) scale(0.98);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+    </style>
+</head>
+<body class="pattern-bg min-h-screen text-slate-900 flex flex-col justify-between items-center p-3 sm:p-5 select-none">
+
+    <!-- MAIN CONTAINER -->
+    <main class="w-full max-w-md mx-auto my-auto relative">
+        
+        <!-- Y2K HEADER DECORATIVE BADGES -->
+        <div class="flex justify-between items-center mb-3 px-1">
+            <span class="inline-block bg-bravoyellow text-black text-xs font-pop font-bold px-3 py-1 rounded-full border-2 border-black shadow-y2k-sm sticker-anim">
+                ✨ EDICIÓN CUMPLE 24 AÑOS
+            </span>
+            <span class="inline-block bg-bravocyan text-black text-xs font-pop font-bold px-3 py-1 rounded-full border-2 border-black shadow-y2k-sm">
+                🔥 TEST EXCLUSIVO
+            </span>
+        </div>
+
+        <!-- MAIN CARD -->
+        <div class="bg-white rounded-3xl border-4 border-black shadow-y2k-lg p-5 sm:p-6 relative overflow-hidden">
+            
+            <div class="absolute -top-1 -left-1 -right-1 h-3 bg-gradient-to-r from-bravopink via-bravoyellow to-bravocyan border-b-2 border-black"></div>
+
+            <!-- ========================================== -->
+            <!-- PANTALLA 0: PORTADA DEL TEST              -->
+            <!-- ========================================== -->
+            <section id="screen-cover" class="fade-in-slide text-center pt-2">
+                <div class="inline-block bg-bravopink text-white font-pop text-xs uppercase px-3 py-1 rounded-md border-2 border-black shadow-y2k-sm mb-2 transform -rotate-2">
+                    Revista SuperBravo #24
+                </div>
+                
+                <h1 class="font-pop text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight mb-3">
+                    TEST SUPERPOP 24 AÑOS 💖
+                </h1>
+                
+                <p class="font-pop text-base font-bold text-bravopurple mb-2">
+                    ¿Qué tipo de Diva eres y cuál es tu regalo ideal?
+                </p>
+
+                <div class="my-4 relative">
+                    <div class="w-24 h-24 sm:w-28 sm:h-28 mx-auto bg-gradient-to-tr from-bravopink to-bravopurple rounded-full border-4 border-black shadow-y2k flex items-center justify-center text-4xl sm:text-5xl">
+                        👑
+                    </div>
+                    <span class="absolute top-0 right-8 bg-bravomint text-black font-pop text-xs font-bold px-2 py-1 rounded-md border-2 border-black shadow-y2k-sm transform rotate-12">
+                        100% FIABLE!
+                    </span>
+                </div>
+
+                <p class="text-xs sm:text-sm font-medium text-slate-700 leading-relaxed mb-6 px-1">
+                    Responde a estas <b>6 preguntas fundamentales</b>. Nuestro algoritmo hiperavanzado de los 2000 calculará tu regalo personalizado definitivo. 💅✨
+                </p>
+
+                <button onclick="startTest()" class="w-full bg-bravopink hover:bg-pink-600 active:scale-95 text-white font-pop text-xl font-bold py-4 px-6 rounded-2xl border-4 border-black shadow-y2k transition-all flex items-center justify-center gap-2">
+                    <span>¡HACER EL TEST!</span>
+                    <span class="text-2xl">🚀</span>
+                </button>
+            </section>
+
+            <!-- ========================================== -->
+            <!-- PANTALLA DE PREGUNTAS (1 A 6)              -->
+            <!-- ========================================== -->
+            <section id="screen-question" class="hidden">
+                <div class="mb-4">
+                    <div class="flex justify-between items-center text-xs font-pop font-bold mb-1">
+                        <span id="question-step" class="text-bravopurple">PREGUNTA 1 DE 6</span>
+                        <span id="progress-percent" class="text-slate-500">16%</span>
+                    </div>
+                    <div class="w-full bg-slate-100 rounded-full h-4 border-2 border-black overflow-hidden p-0.5">
+                        <div id="progress-bar" class="bg-gradient-to-r from-bravopink via-bravoyellow to-bravocyan h-full rounded-full transition-all duration-300 w-1/6"></div>
+                    </div>
+                </div>
+
+                <div class="bg-amber-50 rounded-2xl border-3 border-black p-4 mb-4 text-center relative">
+                    <span id="q-category-tag" class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-bravocyan text-black text-[10px] font-pop font-bold uppercase px-3 py-0.5 rounded-full border border-black shadow-y2k-sm">
+                        TEST DE PERSONALIDAD
+                    </span>
+                    <h2 id="q-title" class="font-pop text-base sm:text-lg font-bold text-slate-900 mt-1 leading-snug">
+                        Cargando pregunta...
+                    </h2>
+                </div>
+
+                <div id="options-container" class="space-y-2.5"></div>
+            </section>
+
+            <!-- ========================================== -->
+            <!-- PANTALLA CARGANDO RESULTADOS               -->
+            <!-- ========================================== -->
+            <section id="screen-calculating" class="hidden text-center py-8">
+                <div class="inline-block animate-spin text-5xl mb-4">🔮</div>
+                <h2 class="font-pop text-2xl font-bold text-slate-900 mb-2">Calculando tu personalidad...</h2>
+                <p class="text-xs font-medium text-slate-600 max-w-xs mx-auto mb-6">
+                    El superordenador de la revista Bravo está analizando tus respuestas...
+                </p>
+                <div class="w-full bg-slate-200 h-3 rounded-full border-2 border-black overflow-hidden">
+                    <div class="bg-bravopink h-full animate-pulse w-full"></div>
+                </div>
+            </section>
+
+            <!-- ========================================== -->
+            <!-- PANTALLA RESULTADO DEL TEST                -->
+            <!-- ========================================== -->
+            <section id="screen-result" class="hidden text-center fade-in-slide">
+                <div class="inline-block bg-bravoyellow text-black font-pop text-xs font-bold uppercase px-3 py-1 rounded-full border-2 border-black shadow-y2k-sm mb-2 transform rotate-1">
+                    🎉 ¡RESULTADO DE TU TEST!
+                </div>
+
+                <div id="result-badge" class="w-16 h-16 mx-auto bg-bravopink text-white rounded-2xl border-3 border-black shadow-y2k flex items-center justify-center text-3xl mb-2">
+                    👑
+                </div>
+
+                <h2 id="result-title" class="font-pop text-xl sm:text-2xl font-extrabold text-slate-900 mb-1 leading-tight">
+                    Te ha tocado: ...
+                </h2>
+                
+                <p class="font-pop text-xs font-bold text-bravopurple mb-4">
+                    Puntuación según las 4 personalidades:
+                </p>
+
+                <!-- SCORE BREAKDOWN (4 PERSONALIDADES Y PUNTUACIÓN) -->
+                <div class="bg-amber-50 rounded-xl border-2 border-black p-4 mb-6 text-left">
+                    <h3 class="font-pop text-[11px] font-bold text-slate-800 uppercase mb-3 text-center">
+                        📊 Desglose de puntuación:
+                    </h3>
+                    <div id="score-bars" class="space-y-2.5 text-xs font-medium"></div>
+                </div>
+
+                <!-- BOTÓN RECIBIR REGALO -->
+                <button onclick="handleGiftClick()" class="w-full bg-bravopink hover:bg-pink-600 active:scale-95 text-white font-pop text-lg font-black py-4 px-4 rounded-2xl border-4 border-black shadow-y2k transition-all flex items-center justify-center gap-2">
+                    <span>🎁 RECIBIR REGALO 🎁</span>
+                </button>
+            </section>
+
+            <!-- ========================================== -->
+            <!-- PANTALLA BROMA PACO (HIPERDRAMÁTICA)       -->
+            <!-- ========================================== -->
+            <section id="screen-paco" class="hidden text-center fade-in-slide py-2">
+                <div class="inline-block bg-dramared text-white font-pop text-xs font-black uppercase px-4 py-1 rounded-full border-2 border-black shadow-y2k-sm mb-3 drama-anim">
+                    🚨 ¡ALERTA ROJA DE LA REVISTA! 🚨
+                </div>
+
+                <div class="w-24 h-24 mx-auto bg-dramared text-white rounded-full border-4 border-black shadow-y2k flex items-center justify-center text-5xl mb-3 drama-anim">
+                    😱
+                </div>
+
+                <div class="bg-red-50 border-4 border-black rounded-2xl p-4 mb-4 shadow-y2k text-center relative overflow-hidden">
+                    <div class="absolute -right-6 -bottom-6 text-7xl opacity-10 font-black">PACO</div>
+                    
+                    <h2 class="font-pop text-2xl font-black text-dramared uppercase mb-1 tracking-wider">
+                        ¡¡PARAD LAS PRENSAS!! 🗞️💥
+                    </h2>
+                    
+                    <p class="font-pop text-base sm:text-lg font-black text-slate-900 leading-snug my-2">
+                        Sorry amiga, ¡yo no regalo a esta personalidad de Paco! :) 🛑🖐️
+                    </p>
+                    
+                    <p class="text-xs font-bold text-slate-700 leading-relaxed bg-bravoyellow/70 p-2 rounded-xl border border-black mt-2">
+                        El comité de los 24 años rechaza este resultado aburrido. ¡Tú naciste para la pura aventura! 🔥
+                    </p>
+                </div>
+
+                <button onclick="revealRealGift()" class="w-full bg-bravocyan hover:bg-teal-300 active:scale-95 text-slate-950 font-pop text-base font-black py-4 px-4 rounded-2xl border-4 border-black shadow-y2k transition-all leading-tight">
+                    QUIERO EL REGALO DE LA QUEEN DEL RIESGO 🧗‍♀️🔥
+                </button>
+            </section>
+
+            <!-- ========================================== -->
+            <!-- PANTALLA FINAL (ESTILO SUPER PREMIO BRAVO)  -->
+            <!-- ========================================== -->
+            <section id="screen-final-zipline" class="hidden text-center fade-in-slide">
+                <!-- BADGE SUPER PREMIO -->
+                <div class="inline-block bg-bravoyellow text-black font-pop text-xs font-black uppercase px-4 py-1.5 rounded-full border-2 border-black shadow-y2k-sm mb-3 transform -rotate-1 sticker-anim">
+                    🏆 ¡PREMIO GORDO DE LA REVISTA BRAVO! 🏆
+                </div>
+
+                <!-- GRAND TITLE -->
+                <h2 class="font-pop text-3xl sm:text-4xl font-black text-bravopink leading-none mb-1">
+                    ¡¡FELICIDADESSS!! 🥳🎉
+                </h2>
+                <p class="font-pop text-xs font-black text-bravopurple uppercase tracking-widest mb-4">
+                    ~ Edición Especial 24 Años ~
+                </p>
+                
+                <!-- BRAVO VIP TICKET / AWARD BOX (REEMPLAZA A LA FOTO) -->
+                <div class="bg-gradient-to-br from-bravopink via-bravopurple to-indigo-900 text-white border-4 border-black rounded-3xl p-5 shadow-y2k relative overflow-hidden mb-5 text-center">
+                    
+                    <!-- Decorative Background Elements -->
+                    <div class="absolute -top-6 -right-6 text-7xl opacity-20 pointer-events-none">🧗‍♀️</div>
+                    <div class="absolute -bottom-6 -left-6 text-7xl opacity-20 pointer-events-none">🌲</div>
+                    
+                    <span class="inline-block bg-bravocyan text-black font-pop text-[10px] font-black px-3 py-0.5 rounded-full border border-black uppercase tracking-wider mb-2">
+                        🎟️ PASE VIP EXCLUSIVO
+                    </span>
+
+                    <h3 class="font-pop text-2xl sm:text-3xl font-black text-bravoyellow leading-tight mb-2 drop-shadow-[2px_2px_0px_#000]">
+                        ¡NOS VAMOS DE TIROLINAS! 🌲🧗‍♀️⚡
+                    </h3>
+
+                    <div class="bg-white/10 backdrop-blur-md rounded-2xl border-2 border-white/30 p-3 mb-3">
+                        <p class="font-pop text-sm sm:text-base font-extrabold text-white leading-snug">
+                            Tu regalo oficial son <span class="text-bravoyellow underline decoration-wavy">2 ENTRADAS PARA LAS TIROLINAS</span>
+                        </p>
+                        <p class="text-xs font-bold text-bravocyan mt-2">
+                            (cuando consigamos cuadrar nuestros horarios) XD 🗓️💥
+                        </p>
+                    </div>
+
+                    <div class="flex justify-center items-center gap-2 text-xs font-pop font-bold text-slate-200">
+                        <span>🌲 Naturaleza</span>
+                        <span>•</span>
+                        <span>⚡ Adrenalina</span>
+                        <span>•</span>
+                        <span>👑 24 Kilos de risas</span>
+                    </div>
+                </div>
+
+                <button onclick="lanzarConfeti()" class="w-full bg-bravoyellow hover:bg-amber-400 active:scale-95 text-black font-pop text-base font-extrabold py-3.5 px-4 rounded-2xl border-4 border-black shadow-y2k transition-all flex items-center justify-center gap-2">
+                    <span>¡LANZAR MÁS CONFETI! 🎊</span>
+                </button>
+            </section>
+
+        </div>
+
+        <!-- FOOTER BRANDING -->
+        <footer class="text-center mt-3 text-[11px] font-pop text-slate-700 font-semibold">
+            Revista Bravo & Superpop © 2026 • Special Birthday Edition
+        </footer>
+    </main>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        const categories = {
+            MODA: { name: "Fashion Victim", emoji: "💅", color: "bg-pink-400" },
+            FIESTA: { name: "Party Queen", emoji: "🪩", color: "bg-purple-400" },
+            AVENTURA: { name: "Queen del Riesgo", emoji: "🧗‍♀️", color: "bg-emerald-400" },
+            RELAX: { name: "Cozy Queen", emoji: "🛋️", color: "bg-amber-400" }
+        };
+
+        const questions = [
+            {
+                tag: "PREGUNTA 1 DE 6 • SÁBADO 14:00H",
+                title: "Te despiertas un sábado a las 14:00h y tienes evento en 30 min:",
+                options: [
+                    { text: "Outfit it-girl a toda prisa", cat: "MODA", icon: "👠" },
+                    { text: "Audio: '¿quién lleva los hielos?'", cat: "FIESTA", icon: "🍹" },
+                    { text: "Ropa cómoda y salgo corriendo", cat: "AVENTURA", icon: "⚡" },
+                    { text: "Simulo neumonía y sigo durmiendo", cat: "RELAX", icon: "🌯" }
+                ]
+            },
+            {
+                tag: "PREGUNTA 2 DE 6 • IMPRESCINDIBLE",
+                title: "Tu imprescindible de supervivencia diaria:",
+                options: [
+                    { text: "Gloss y gafas de sol XXL", cat: "MODA", icon: "🕶️" },
+                    { text: "Purpurina y vaso reutilizable", cat: "FIESTA", icon: "✨" },
+                    { text: "Tiritas y navaja multiusos", cat: "AVENTURA", icon: "🎒" },
+                    { text: "Antifaz de seda y chicles", cat: "RELAX", icon: "🍫" }
+                ]
+            },
+            {
+                tag: "PREGUNTA 3 DE 6 • ALARMA ROJA",
+                title: "¡Alarma de incendios en casa! Tu primer instinto:",
+                options: [
+                    { text: "Salvar mi cazadora favorita", cat: "MODA", icon: "📸" },
+                    { text: "Montar una rave con las luces", cat: "FIESTA", icon: "🪩" },
+                    { text: "Extintor en mano a lo Rambo", cat: "AVENTURA", icon: "🧯" },
+                    { text: "Tila instantánea y abrir Netflix", cat: "RELAX", icon: "🍕" }
+                ]
+            },
+            {
+                tag: "PREGUNTA 4 DE 6 • EL DRAMA",
+                title: "Tu crush te pone: 'Tenemos que hablar...':",
+                options: [
+                    { text: "Repasar si falló mi outfit", cat: "MODA", icon: "👗" },
+                    { text: "'¡Chicas, abrid el vino ya!'", cat: "FIESTA", icon: "🍷" },
+                    { text: "'A las 5 en la calle sin camiseta'", cat: "AVENTURA", icon: "🥊" },
+                    { text: "Modo avión durante 3 meses", cat: "RELAX", icon: "☕" }
+                ]
+            },
+            {
+                tag: "PREGUNTA 5 DE 6 • ESCAPADA",
+                title: "Escapada de finde con amigas, tu rol oficial:",
+                options: [
+                    { text: "Supervisar las fotos e it-girl", cat: "MODA", icon: "💅" },
+                    { text: "DJ y buscar los mejores garitos", cat: "FIESTA", icon: "🎶" },
+                    { text: "Organizar la ruta más salvaje", cat: "AVENTURA", icon: "🌲" },
+                    { text: "Buscar hotel con el mejor buffet", cat: "RELAX", icon: "🛋️" }
+                ]
+            },
+            {
+                tag: "PREGUNTA 6 DE 6 • EL PLANAZO",
+                title: "Eliges el plan ideal para celebrar tus 24:",
+                options: [
+                    { text: "Tarde de compras y fotos pro", cat: "MODA", icon: "👑" },
+                    { text: "Fiesta loca hasta el amanecer", cat: "FIESTA", icon: "🔋" },
+                    { text: "Volar por los aires y adrenalina", cat: "AVENTURA", icon: "🧗‍♀️" },
+                    { text: "Maratón de pelis y manta", cat: "RELAX", icon: "😴" }
+                ]
+            }
+        ];
+
+        let currentQuestion = 0;
+        let scores = { MODA: 0, FIESTA: 0, AVENTURA: 0, RELAX: 0 };
+        let winningCategory = "";
+
+        function startTest() {
+            document.getElementById('screen-cover').classList.add('hidden');
+            document.getElementById('screen-question').classList.remove('hidden');
+            renderQuestion();
+        }
+
+        function renderQuestion() {
+            const q = questions[currentQuestion];
+            
+            document.getElementById('question-step').innerText = `PREGUNTA ${currentQuestion + 1} DE ${questions.length}`;
+            const percent = Math.round(((currentQuestion + 1) / questions.length) * 100);
+            document.getElementById('progress-percent').innerText = `${percent}%`;
+            document.getElementById('progress-bar').style.width = `${percent}%`;
+
+            document.getElementById('q-category-tag').innerText = q.tag;
+            document.getElementById('q-title').innerText = q.title;
+
+            const container = document.getElementById('options-container');
+            container.innerHTML = '';
+
+            q.options.forEach((opt) => {
+                const btn = document.createElement('button');
+                btn.className = "w-full text-left bg-slate-50 hover:bg-amber-100 active:bg-bravoyellow active:scale-[0.99] border-2 border-black rounded-2xl p-3 transition-all shadow-y2k-sm flex items-center gap-3 group";
+                btn.onclick = () => selectOption(opt.cat);
+
+                btn.innerHTML = `
+                    <span class="w-9 h-9 shrink-0 bg-white border-2 border-black rounded-xl flex items-center justify-center text-xl shadow-y2k-sm group-hover:scale-110 transition-transform">
+                        ${opt.icon}
+                    </span>
+                    <span class="text-xs sm:text-sm font-semibold text-slate-800 leading-snug">
+                        ${opt.text}
+                    </span>
+                `;
+                container.appendChild(btn);
+            });
+        }
+
+        function selectOption(category) {
+            scores[category]++;
+
+            if (currentQuestion < questions.length - 1) {
+                currentQuestion++;
+                const qScreen = document.getElementById('screen-question');
+                qScreen.classList.remove('fade-in-slide');
+                void qScreen.offsetWidth; 
+                qScreen.classList.add('fade-in-slide');
+                renderQuestion();
+            } else {
+                showCalculating();
+            }
+        }
+
+        function showCalculating() {
+            document.getElementById('screen-question').classList.add('hidden');
+            document.getElementById('screen-calculating').classList.remove('hidden');
+
+            setTimeout(() => {
+                document.getElementById('screen-calculating').classList.add('hidden');
+                document.getElementById('screen-result').classList.remove('hidden');
+                renderTestResult();
+            }, 1400);
+        }
+
+        function renderTestResult() {
+            // REGLA DE DESEMPATE: Si AVENTURA iguala la máxima puntuación con cualquier otra, GANA AVENTURA.
+            const maxScore = Math.max(...Object.values(scores));
+            
+            if (scores.AVENTURA === maxScore) {
+                winningCategory = "AVENTURA";
+            } else {
+                for (const [cat, score] of Object.entries(scores)) {
+                    if (score === maxScore) {
+                        winningCategory = cat;
+                        break;
+                    }
+                }
+            }
+
+            const winningData = categories[winningCategory];
+            document.getElementById('result-badge').innerText = winningData.emoji;
+            document.getElementById('result-title').innerText = `Te ha tocado: ${winningData.name}`;
+
+            const scoreContainer = document.getElementById('score-bars');
+            scoreContainer.innerHTML = '';
+
+            for (const [key, data] of Object.entries(categories)) {
+                const count = scores[key];
+                const pct = Math.round((count / questions.length) * 100);
+                
+                scoreContainer.innerHTML += `
+                    <div>
+                        <div class="flex justify-between text-[11px] font-bold text-slate-700 mb-0.5">
+                            <span>${data.emoji} ${data.name}</span>
+                            <span>${pct}% (${count} pts)</span>
+                        </div>
+                        <div class="w-full bg-slate-200 h-2.5 rounded-full border border-black overflow-hidden">
+                            <div class="${data.color} h-full" style="width: ${pct}%"></div>
+                        </div>
+                    </div>
+                `;
+            }
+        }
+
+        function handleGiftClick() {
+            document.getElementById('screen-result').classList.add('hidden');
+            
+            if (winningCategory === 'AVENTURA') {
+                // Si gana o empata Queen del Riesgo, va directo a la pantalla final
+                revealRealGift();
+            } else {
+                // Si no, sale la pantalla de Paco súper dramática
+                document.getElementById('screen-paco').classList.remove('hidden');
+            }
+        }
+
+        function revealRealGift() {
+            document.getElementById('screen-paco').classList.add('hidden');
+            document.getElementById('screen-result').classList.add('hidden');
+            document.getElementById('screen-final-zipline').classList.remove('hidden');
+            lanzarConfeti();
+        }
+
+        function lanzarConfeti() {
+            const duration = 3000;
+            const animationEnd = Date.now() + duration;
+            const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 999 };
+
+            function randomInRange(min, max) {
+                return Math.random() * (max - min) + min;
+            }
+
+            const interval = setInterval(function() {
+                const timeLeft = animationEnd - Date.now();
+
+                if (timeLeft <= 0) {
+                    return clearInterval(interval);
+                }
+
+                const particleCount = 50 * (timeLeft / duration);
+                confetti({ ...defaults, particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } });
+                confetti({ ...defaults, particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } });
+            }, 250);
+        }
+    </script>
+</body>
+</html>
